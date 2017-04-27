@@ -171,6 +171,11 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public int getID(int itemIndex){
+        int result = getIntData(COL_1, COL_11, itemIndex).getInt(0);
+        return result;
+    }
+
     public int getItemIndex(){
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor result = db.rawQuery("SELECT COUNT(*) FROM " + TABLE_NAME + ";", null );

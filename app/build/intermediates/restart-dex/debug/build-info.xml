@@ -5,29 +5,29 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="86713014226390"
+    timestamp="248518040552866"
     token="-4054917552502219334"
     verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="6151" />
+        duration="5030" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1261" />
+        duration="1314" />
     <task
         name="verifier"
-        duration="400" />
+        duration="389" />
 
     <artifact
         location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\outputs\apk\app-debug.apk"
         type="MAIN" />
 
     <build
-        timestamp="86713014226390"
+        timestamp="248518040552866"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\outputs\apk\app-debug.apk"
