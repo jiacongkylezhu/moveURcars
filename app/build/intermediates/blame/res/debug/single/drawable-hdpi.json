@@ -1,10 +1,18 @@
 [
     {
+        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add_white_24px.png",
+        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_add_white_24px.png"
+    },
+    {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_add_white_24px.png",
         "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_add_white_24px.png"
     },
     {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_delete_sweep_black_48dp.png",
         "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_delete_sweep_black_48dp.png"
+    },
+    {
+        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_delete_sweep_black_48dp.png",
+        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_delete_sweep_black_48dp.png"
     }
 ]
