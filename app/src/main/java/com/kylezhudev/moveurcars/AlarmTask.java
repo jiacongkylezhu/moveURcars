@@ -16,13 +16,17 @@ public class AlarmTask implements Runnable {
     private final AlarmManager alarmManager;
     private final Context context;
     private final String ALARM_ID = "AlarmId";
+    private final String DELETE_FLAG = "isDeleted";
+    private boolean isDeleted = false;
     private int id;
 
-    public AlarmTask(Context context, Calendar notificationDate,  int id ) {
+    public AlarmTask(Context context, Calendar notificationDate, int id, boolean isDeleted) {
         this.context = context;
         this.alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         this.notificationDate = notificationDate;
         this.id = id;
+       this.isDeleted = isDeleted;
+
     }
 
     @Override
@@ -32,6 +36,7 @@ public class AlarmTask implements Runnable {
         Intent intent = new Intent(context, AlarmReceiver.class);
 //        intent.putExtra(NotificationService.INTENT_NOTIFY, true);
         intent.putExtra(ALARM_ID, this.id);
+        intent.putExtra(DELETE_FLAG, this.isDeleted);
         //TODO replace the pending with the one .getbroadcast, then create a new receiver class.
         //TODO 2.
 

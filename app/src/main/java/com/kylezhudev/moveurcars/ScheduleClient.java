@@ -44,8 +44,8 @@ public class ScheduleClient {
      * @param notificationCal
      */
 
-    public void setAlarmForNotification(Calendar notificationCal, int id) {
-        this.boundService.setAlarm(notificationCal, id);
+    public void setAlarmForNotification(Calendar notificationCal, int id, boolean deleteFlag) {
+        this.boundService.setAlarm(notificationCal, id, deleteFlag);
     }
 
     public void doUnBindService() {

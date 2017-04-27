@@ -34,6 +34,8 @@ public class ReceiverIntentService extends IntentService {
     private final String TAG = "ReceiverIntent";
     private ScheduleClient scheduleClient;
     private DatabaseHelper dbHelper;
+    private final String DELETE_FLAG = "isDeleted";
+    private boolean isDeleted = false;
 
 
     public ReceiverIntentService() {
@@ -48,6 +50,7 @@ public class ReceiverIntentService extends IntentService {
         mContext = getApplicationContext();
 //        mContext.bindService(new Intent(this.mContext, ScheduleService.class), connection,BIND_AUTO_CREATE);
         alarmId = intent.getIntExtra(ALARM_ID, -1);
+        isDeleted = intent.getBooleanExtra(DELETE_FLAG,isDeleted);
         scheduleClient = new ScheduleClient(this);
         scheduleClient.doBindService();
         setNextAlarm();
@@ -149,7 +152,7 @@ public class ReceiverIntentService extends IntentService {
             Toast.makeText(this, "alarmID is not returned correctly", Toast.LENGTH_SHORT).show();
         } else {
 
-            scheduleClient.setAlarmForNotification(nextAlarmCal, alarmId);
+            scheduleClient.setAlarmForNotification(nextAlarmCal, alarmId, isDeleted);
             scheduleClient.doUnBindService();
 //            MainActivity.getAlarmFragment().updateSelectedDates();
 

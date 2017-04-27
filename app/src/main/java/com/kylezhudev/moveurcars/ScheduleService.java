@@ -42,14 +42,18 @@ public class ScheduleService extends Service {
         return START_STICKY;
     }
 
+    /**
+     * Pass reference to AlarmTask
+     */
+
     @Nullable
     @Override
     public IBinder onBind(Intent intent) {
         return binder;
     }
 
-    public void setAlarm(Calendar calendar, int id){
-        new AlarmTask(this, calendar, id).run();
+    public void setAlarm(Calendar calendar, int id, boolean deleteFlag){
+        new AlarmTask(this, calendar, id, deleteFlag).run();
 
 
     }

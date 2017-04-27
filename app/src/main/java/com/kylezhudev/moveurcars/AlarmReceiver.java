@@ -23,6 +23,9 @@ public class AlarmReceiver extends BroadcastReceiver {
     private Context context;
     private int alarmId;
     private final String ALARM_ID = "AlarmId";
+    private final String DELETE_FLAG = "isDeleted";
+    private boolean isDeleted = false;
+
 
 
 
@@ -33,6 +36,7 @@ public class AlarmReceiver extends BroadcastReceiver {
         Log.i("AlarmReceiver", "onCreate();");
         this.notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
         alarmId = intent.getIntExtra(ALARM_ID, -1);
+        isDeleted = intent.getBooleanExtra(DELETE_FLAG, false);
         showNotification();
 
         /**
@@ -42,10 +46,12 @@ public class AlarmReceiver extends BroadcastReceiver {
 
         Intent receiverIntent = new Intent(context, ReceiverIntentService.class);
         receiverIntent.putExtra(ALARM_ID, alarmId);
+        intent.putExtra(DELETE_FLAG, this.isDeleted);
 //        receiverIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startService(receiverIntent);
 
     }
+
 
 
     private void showNotification() {

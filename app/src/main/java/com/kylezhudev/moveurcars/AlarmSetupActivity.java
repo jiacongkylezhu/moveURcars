@@ -145,8 +145,9 @@ public class AlarmSetupActivity extends AppCompatActivity {
                     /**
                      * Alarm service starts here
                      */
+                    boolean deleteFlag = false;
 
-                    scheduleClient.setAlarmForNotification(selectedCalendar, itemIndex);
+                    scheduleClient.setAlarmForNotification(selectedCalendar, itemIndex, deleteFlag);
 
                     Toast.makeText(AlarmSetupActivity.this, "Street cleaning notification is set for: " + hour + ":" + minute
                             + " on " + strDate, Toast.LENGTH_SHORT).show();
