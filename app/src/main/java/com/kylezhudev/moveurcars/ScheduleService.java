@@ -52,11 +52,15 @@ public class ScheduleService extends Service {
         return binder;
     }
 
-    public void setAlarm(Calendar calendar, int id, boolean deleteFlag){
-        new AlarmTask(this, calendar, id, deleteFlag).run();
+    public void setAlarm(Calendar calendar, int id){
+        new AlarmTask(this, calendar, id).run();
+    }
 
+    public void cancelAlarm(int id, boolean deleteFlag){
+        new AlarmTask(this, id, deleteFlag).stop();
 
     }
+
 
 
     @RequiresApi(api = Build.VERSION_CODES.N)

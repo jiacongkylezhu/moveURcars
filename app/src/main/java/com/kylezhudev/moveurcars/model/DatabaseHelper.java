@@ -78,12 +78,13 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.update(TABLE_NAME, contentValues, strFilter, null);
     }
 
-    public void updateNextCal(int year, int month, int id){
+    public void updateNextCal(int year, int month, int dayOfMonth, int id){
         String strFilter = "item_index=" + Integer.toString(id);
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COL_2, year);
         contentValues.put(COL_3, month);
+        contentValues.put(COL_4, dayOfMonth);
         db.update(TABLE_NAME, contentValues, strFilter, null);
     }
 
@@ -158,6 +159,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         }
     }
 
+
     public Cursor getStringData(String displayColumnName, String columnName, int target ){
         SQLiteDatabase db = this.getWritableDatabase();
         String targetItemIndex = Integer.toString(target);
@@ -187,7 +189,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public void deleteItem(int position){
         SQLiteDatabase db = this.getWritableDatabase();
         db.execSQL("DELETE FROM " + TABLE_NAME + " WHERE " + COL_11 + " = " + position + ";");
+        Log.i("db row deleted","Item count = " + db.rawQuery("SELECT * FROM " + TABLE_NAME + ";", null ).getCount());
         db.execSQL("UPDATE " + TABLE_NAME + " SET " + COL_11 + " = " + COL_11 + " -1 WHERE " + COL_11 + " > " + position + ";");
+
         db.close();
     }
 
@@ -196,6 +200,53 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         long id = db.insert(TABLE_NAME, null,null);
         return id;
     }
+
+    public int getYearById(int id){
+        Log.i("CheckItemIndexRec","id = " + id);
+        int result = getIntData(COL_2, COL_1, id).getInt(0);
+        return result;
+    }
+
+    public int getMonthById(int id){
+        int result = getIntData(COL_3, COL_1, id).getInt(0);
+        return result;
+    }
+
+    public int getDayOfMonthById(int id){
+        int result = getIntData(COL_4, COL_1, id).getInt(0);
+        return result;
+    }
+
+    public int getDowimById(int id){
+        int result = getIntData(COL_5, COL_1, id).getInt(0);
+        return result;
+    }
+
+    public int getDayOfWeekById(int id){
+        int result = getIntData(COL_6, COL_1, id).getInt(0);
+        return result;
+    }
+
+    public int getHourById(int id){
+        int result = getIntData(COL_7, COL_1, id).getInt(0);
+        return result;
+    }
+
+    public int getMinuteById(int id){
+        int result = getIntData(COL_8, COL_1, id).getInt(0);
+        return result;
+    }
+
+    public String getStreetById(int id){
+        String result = getStringData(COL_9, COL_1, id).getString(0);
+        return result;
+    }
+
+    public String getSideById(int id){
+        String result = getStringData(COL_10, COL_1, id).getString(0);
+        return result;
+    }
+
 
     public int getYear(int id){
         Log.i("CheckItemIndexRec","Item Index = " + id);

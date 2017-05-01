@@ -2,5 +2,9 @@
     {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
         "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi\\ic_launcher.png",
+        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     }
 ]

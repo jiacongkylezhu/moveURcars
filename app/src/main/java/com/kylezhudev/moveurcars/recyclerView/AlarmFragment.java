@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.kylezhudev.moveurcars.AlarmTask;
 import com.kylezhudev.moveurcars.R;
 import com.kylezhudev.moveurcars.model.DatabaseHelper;
 import com.kylezhudev.moveurcars.model.SelectedDates;
@@ -38,13 +39,7 @@ public class AlarmFragment extends Fragment {
 //    private static String alarmId;
     private TextView tvNoDataFound;
     private String TAG = "Date Creation";
-    private final static String ALARM_ID = "spAlarmId";
-    private final static String SP_YEAR_KEY = "Year";
-    private final static String SP_MONTH_KEY = "Month";
-    private final static String SP_DAY_KEY = "Day";
-    private final static String SP_HOUR_KEY = "Hour";
-    private final static String SP_MINUTE_KEY = "Minute";
-    private final static String SP_ALARM_ID = "AlarmId";
+    private static int alarmID = 0;
 
     private String streetSP = "streetSP", numSP = "numSP";
     private int numStored;
@@ -343,6 +338,7 @@ public class AlarmFragment extends Fragment {
 
     private void deleteItem(final int position, final RecyclerView.ViewHolder viewHolder) {
         mDeleteFlag = true;
+
         final SelectedDates removedDate = mSelectedDates.get(position);
         AlarmRVAdapter.AlarmViewHolder vh = (AlarmRVAdapter.AlarmViewHolder) rvAlarmList.findViewHolderForAdapterPosition(position);
         Toast.makeText(getContext(), "position: " + position, Toast.LENGTH_SHORT).show();
@@ -365,7 +361,11 @@ public class AlarmFragment extends Fragment {
 
         if (mDeleteFlag) {
             DatabaseHelper dbHelper = DatabaseHelper.getInstance(getContext());
-            dbHelper.deleteItem(position);
+            alarmID = dbHelper.getID(position + 1);
+            Log.i("deleteID", "Deleting row where id = " + alarmID);
+            new AlarmTask(getContext(), alarmID, mDeleteFlag).stop();
+//            new AlarmTask(getContext(), position, mDeleteFlag).stop();
+            dbHelper.deleteItem(position + 1);
             dbHelper.closeDB();
             dbHelper.close();
         }

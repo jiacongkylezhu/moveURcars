@@ -98,7 +98,8 @@ public class AlarmSetupActivity extends AppCompatActivity {
                 dayOfWeek = selectedCalendar.get(Calendar.DAY_OF_WEEK);
 
                 selectedDates = new SelectedDates(year, month, dayOfMonth);
-                strDate = new SimpleDateFormat("MM/dd/yyyy").format(selectedDates.getTime());
+//                strDate = new SimpleDateFormat("MM/dd/yyyy").format(selectedDates.getTime());
+                strDate = new SimpleDateFormat("MM/dd/yyyy").format(selectedCalendar.getTime());
 
                 Calendar testCal = Calendar.getInstance();
                 testCal.set(Calendar.YEAR, year);
@@ -145,10 +146,12 @@ public class AlarmSetupActivity extends AppCompatActivity {
                     /**
                      * Alarm service starts here
                      */
-                    boolean deleteFlag = false;
 
-                    scheduleClient.setAlarmForNotification(selectedCalendar, itemIndex, deleteFlag);
 
+//                    scheduleClient.setAlarmForNotification(selectedCalendar, itemIndex, deleteFlag);
+                    scheduleClient.setAlarmForNotification(selectedCalendar, intAlarmId);
+//                    strDate = new SimpleDateFormat("MM/dd/yyyy").format(selectedDates.getTime());
+                    strDate = new SimpleDateFormat("MM/dd/yyyy").format(selectedCalendar.getTime());
                     Toast.makeText(AlarmSetupActivity.this, "Street cleaning notification is set for: " + hour + ":" + minute
                             + " on " + strDate, Toast.LENGTH_SHORT).show();
 
@@ -181,7 +184,10 @@ public class AlarmSetupActivity extends AppCompatActivity {
         if(itemIndex != -1){
             dbHelper.updateCal(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), calendar.get(Calendar.DAY_OF_WEEK_IN_MONTH),
                    calendar.get(Calendar.DAY_OF_WEEK), calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), itemIndex);
-
+            /**
+             * use itemIndex to capture id in db and pass it to ScheduleClient
+             */
+            intAlarmId = dbHelper.getID(itemIndex);
 //            boolean isInserted = dbHelper.insertData(calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH), calendar.get(Calendar.DAY_OF_WEEK_IN_MONTH),
 //                    calendar.get(Calendar.DAY_OF_WEEK), calendar.get(Calendar.HOUR_OF_DAY), calendar.get(Calendar.MINUTE), null, null, itemIndex);
 //            if (isInserted) {
