@@ -16,29 +16,27 @@ import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 
 import java.util.Calendar;
-import java.util.Date;
 
 public class ScheduleService extends Service {
     private static int notifyID = 1;
     NotificationCompat.Builder builder;
     Notification notification;
     NotificationManager notificationManager;
-    Date selectedDate;
 
 
     private final IBinder binder = new ServiceBinder();
 
-    public class ServiceBinder extends Binder{
+    public class ServiceBinder extends Binder {
 
-        ScheduleService getService(){
-        return ScheduleService.this;
-    }
+        ScheduleService getService() {
+            return ScheduleService.this;
+        }
 
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
-        Log.i("ScheduleService","Received start id " + startId + ": " + intent);
+        Log.i("ScheduleService", "Received start id " + startId + ": " + intent);
         return START_STICKY;
     }
 
@@ -52,19 +50,18 @@ public class ScheduleService extends Service {
         return binder;
     }
 
-    public void setAlarm(Calendar calendar, int id){
+    public void setAlarm(Calendar calendar, int id) {
         new AlarmTask(this, calendar, id).run();
     }
 
-    public void cancelAlarm(int id, boolean deleteFlag){
+    public void cancelAlarm(int id, boolean deleteFlag) {
         new AlarmTask(this, id, deleteFlag).stop();
 
     }
 
 
-
     @RequiresApi(api = Build.VERSION_CODES.N)
-    public void setupNotification(){
+    public void setupNotification() {
 
         builder = (NotificationCompat.Builder) new NotificationCompat.Builder(this)
                 .setSmallIcon(R.drawable.ic_car_notification)

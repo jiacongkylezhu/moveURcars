@@ -11,9 +11,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.NotificationCompat;
 import android.util.Log;
 
-/**
- * Created by k.zhu on 1/17/2017.
- */
 public class NotificationService extends Service{
 
     private static final int notificationID = 001;

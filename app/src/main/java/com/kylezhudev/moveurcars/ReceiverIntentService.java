@@ -19,17 +19,9 @@ public class ReceiverIntentService extends IntentService {
     private Context mContext;
     private AlarmManager alarmManager;
     private Calendar nextAlarmCal;
-    private int alarmId =-1;
+    private int alarmId = -1;
     public static String INTENT_NOTIFY = "com.blundell.tut.service.INTENT_NOTIFY";
     private final String ALARM_ID = "AlarmId";
-    private final static String SP_YEAR_KEY = "Year";
-    private final static String SP_MONTH_KEY = "Month";
-    private final static String SP_DAY_KEY = "Day";
-    private final static String SP_HOUR_KEY = "Hour";
-    private final static String SP_DOW_KEY = "DayOfWeek";
-    private final static String SP_DOWIM_KEY = "DayOfWeekInMonth";
-    private final static String SP_MINUTE_KEY = "Minute";
-    private final static String SP_ALARM_ID = "AlarmId";
     private final String TAG = "ReceiverIntent";
     private ScheduleClient scheduleClient;
     private DatabaseHelper dbHelper;
@@ -84,14 +76,6 @@ public class ReceiverIntentService extends IntentService {
                 + " Day of Week " + dow + "  Hour " + hour + "  Minute " + minute);
 
 
-//        SharedPreferences spAlarm = mContext.getSharedPreferences(Integer.toString(alarmId), MODE_PRIVATE);
-//        int year = spAlarm.getInt(SP_YEAR_KEY, -1);
-//        int month = spAlarm.getInt(SP_MONTH_KEY, -1);
-//        int dowim = spAlarm.getInt(SP_DOWIM_KEY, -1);
-//        int dow = spAlarm.getInt(SP_DOW_KEY, -1);
-//        int hour = spAlarm.getInt(SP_HOUR_KEY, -1);
-//        int minute = spAlarm.getInt(SP_MINUTE_KEY, -1);
-
         nextAlarmCal = Calendar.getInstance();
 
         if (month == 11) {
@@ -99,34 +83,14 @@ public class ReceiverIntentService extends IntentService {
             year += 1;
             nextAlarmCal.set(Calendar.YEAR, year);
             nextAlarmCal.set(Calendar.MONTH, month);
-
-
-//            SharedPreferences sharedPreferences = mContext.getSharedPreferences(Integer.toString(alarmId), MODE_PRIVATE);
-//            if (sharedPreferences != null) {
-//                SharedPreferences.Editor editor = sharedPreferences.edit();
-//                editor.putInt(SP_MONTH_KEY, month);
-//                editor.putInt(SP_YEAR_KEY, year);
-//                editor.commit();
-//            } else {
-//                Log.i(TAG, "Alarm ID is incorrect: " + alarmId);
-//                Toast.makeText(mContext, "Alarm ID is incorrect", Toast.LENGTH_SHORT).show();
-//            }
         } else {
             nextAlarmCal.add(Calendar.MONTH, 1);
             month += 1;
             /**
              * updateNextMonth is set to month + 1
              */
-//            dbHelper.updateNextMonth(month, alarmId);
-
-//            nextAlarmCal.add(Calendar.MONTH, 1);
-//            SharedPreferences sharedPreferences = mContext.getSharedPreferences(Integer.toString(alarmId), MODE_PRIVATE);
-//            SharedPreferences.Editor editor = sharedPreferences.edit();
-//            editor.putInt(SP_MONTH_KEY, month + 1);
-//            editor.commit();
         }
 
-//        int nextMonthDOW, nextMonthDOWIM;
         int nextMonthDOW = nextAlarmCal.get(Calendar.DAY_OF_WEEK);
         int nextMonthDOWIM = nextAlarmCal.get(Calendar.DAY_OF_WEEK_IN_MONTH);
 
@@ -137,15 +101,10 @@ public class ReceiverIntentService extends IntentService {
         }
         int day = nextAlarmCal.get(Calendar.DAY_OF_MONTH);
         dbHelper.updateNextCal(year, month, day, alarmId);
-//        nextAlarmCal.set(Calendar.HOUR, hour);
+
         nextAlarmCal.set(Calendar.HOUR_OF_DAY, hour);
         nextAlarmCal.set(Calendar.MINUTE, minute);
-//        nextAlarmCal.set(Calendar.SECOND, 0);
 
-//        alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-//        Intent intent = new Intent(context, AlarmReceiver.class);
-//        PendingIntent pendingIntent = PendingIntent.getBroadcast(context, alarmId, intent, PendingIntent.FLAG_UPDATE_CURRENT);
-//        alarmManager.set(AlarmManager.RTC_WAKEUP,nextAlarmCal.getTimeInMillis(),pendingIntent);
 
         if (nextAlarmCal == null) {
             Log.i("nullNextCalendar", "nextAlarmCal is null");

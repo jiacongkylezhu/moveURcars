@@ -9,9 +9,6 @@ import android.util.Log;
 
 import java.util.Calendar;
 
-/**
- * Created by k.zhu on 1/17/2017.
- */
 
 public class ScheduleClient {
     private ScheduleService boundService;
@@ -42,16 +39,17 @@ public class ScheduleClient {
 
     /**
      * use the following method passing reference to ScheduleService and set up alarm
+     *
      * @param notificationCal
      */
 
     public void setAlarmForNotification(Calendar notificationCal, int id) {
-        Log.i("Ref.NullChecker","calendar " + notificationCal.getTime() + " id: " + id + "boundSerice =" +boundService);
-        if(boundService == null){
+        Log.i("Ref.NullChecker", "calendar " + notificationCal.getTime() + " id: " + id + "boundSerice =" + boundService);
+        if (boundService == null) {
             doBindService();
         }
         this.boundService.setAlarm(notificationCal, id);
-        Log.i("NextAlarmService","Sent " + notificationCal.getTime() + " id: " + id + "boundSerice =" +boundService);
+        Log.i("NextAlarmService", "Sent " + notificationCal.getTime() + " id: " + id + "boundSerice =" + boundService);
     }
 
 

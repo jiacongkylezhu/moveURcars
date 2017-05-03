@@ -27,11 +27,12 @@ public class AlarmReceiver extends BroadcastReceiver {
     private boolean isDeleted = false;
 
 
-
-
     @Override
     public void onReceive(Context context, Intent intent) {
-        //show notification based on the alarm calendar
+        /**
+         show notification based on the alarm calendar
+         */
+
         this.context = context;
         Log.i("AlarmReceiver", "onCreate();");
         this.notificationManager = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
@@ -40,8 +41,8 @@ public class AlarmReceiver extends BroadcastReceiver {
         showNotification();
 
         /**
-          After showing notification, do the following to start a new service to
-          set up the next alarm.
+         After showing notification, do the following to start a new service to
+         set up the next alarm.
          */
 
         Intent receiverIntent = new Intent(context, ReceiverIntentService.class);
@@ -53,26 +54,24 @@ public class AlarmReceiver extends BroadcastReceiver {
     }
 
 
-
     private void showNotification() {
 
         builder = (NotificationCompat.Builder) new NotificationCompat.Builder(context)
                 .setContentTitle("Street Cleaning")
                 .setSmallIcon(R.drawable.ic_car_notification)
-                .setContentText("Alarm ID: "+ alarmId + ". Street Cleaning soon. Don't forget to move your car")
+                .setContentText("Alarm ID: " + alarmId + ". Street Cleaning soon. Don't forget to move your car")
                 .setDefaults(Notification.DEFAULT_ALL)
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_MAX);
 
 
-
         Intent intent = new Intent(context, NotificationDetails.class);
-        PendingIntent contentIntent = PendingIntent.getActivity(context, 0, intent,PendingIntent.FLAG_UPDATE_CURRENT);
+        PendingIntent contentIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 //        PendingIntent contentIntent = PendingIntent.getActivity(context, alarmId, intent,PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(contentIntent);
         Notification notification = builder.build();
         notificationManager.notify(notificationID, notification);
-//        notificationManager.notify(alarmId, notification);
+
 
 //        stopSelf();
 

@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-//                startActivity(new Intent(MainActivity.this, AlarmSetupActivity.class));
                 startActivity(new Intent(MainActivity.this, StreetSetup.class));
             }
         });
@@ -76,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
         alarmFragment = new AlarmFragment();
         vpAdapter.addFrag(alarmFragment, "Coordinator Layout");
         viewPager.setAdapter(vpAdapter);
-
     }
 
     static class ViewPagerAdapter extends FragmentPagerAdapter {

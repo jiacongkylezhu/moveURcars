@@ -1,8 +1,6 @@
 package com.kylezhudev.moveurcars.model;
 
-/**
- * Created by Kyle on 1/22/2017.
- */
+
 
 public class Street {
     String streetName;

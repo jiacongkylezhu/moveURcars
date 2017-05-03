@@ -20,13 +20,7 @@ public class StreetSetup extends AppCompatActivity {
     private String street;
     private Button btnSave;
     private EditText editText;
-    private String streetSP = "streetSP", numSP = "numSP";
-    private int numStored;
     private DatabaseHelper dbHelper;
-
-    private static final String SP_STREET_KEY = "street";
-    private static final String SP_SIDE_KEY = "side";
-    private static final String SP_STREET_ID_KEY = "side";
     private static int id;
     private static final String ID_KEY = "ID";
 
@@ -82,6 +76,7 @@ public class StreetSetup extends AppCompatActivity {
         }else {
             id++;
         }
+
         Log.i("check inAlarmId", "intAlarmId = " + id);
 
         boolean isInserted = dbHelper.insertData(street,side,id);
@@ -93,35 +88,4 @@ public class StreetSetup extends AppCompatActivity {
         dbHelper.closeDB();
         dbHelper.close();
     }
-
-
-
-
-        //TODO 4/16/2017 delete below if the above works
-
-//        SharedPreferences spStreetID = getSharedPreferences(numSP, MODE_PRIVATE);
-//        if(Integer.toString(numStored) != null) {
-//            numStored = spStreetID.getInt(SP_STREET_ID_KEY, -1);
-//        }
-//
-//        if(numStored == -1){
-//            numStored = 1;
-//        }else{
-//            numStored ++;
-//        }
-//        Log.i("check streetID", "streetID = " + numStored);
-//
-//
-//        SharedPreferences.Editor idEditor = spStreetID.edit();
-//        idEditor.putInt(SP_STREET_ID_KEY, numStored);
-//        idEditor.commit();
-//
-//        SharedPreferences spStreet = getSharedPreferences(streetSP + Integer.toString(numStored),MODE_PRIVATE);
-//        SharedPreferences.Editor streetEditor = spStreet.edit();
-//        streetEditor.putString(SP_STREET_KEY, street);
-//        streetEditor.putString(SP_SIDE_KEY, side);
-//        streetEditor.commit();
-//
-//
-
 }
