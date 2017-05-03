@@ -21,7 +21,8 @@
         <item name="android:windowCloseOnTouchOutside">true</item>
     </style>
     <style name="MainButton" parent="Theme.AppCompat.Light">
-        
+        <item name="colorControlHighlight">@color/colorButtonOnClick</item>
+        <item name="colorButtonNormal">@color/colorButtonNormal</item>
     </style>
 
 
