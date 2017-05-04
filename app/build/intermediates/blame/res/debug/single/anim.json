@@ -16,12 +16,12 @@
         "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_fade_in.xml"
     },
     {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_fade_out.xml"
-    },
-    {
         "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
         "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.1.0\\res\\anim\\abc_fade_out.xml"
     },
     {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",

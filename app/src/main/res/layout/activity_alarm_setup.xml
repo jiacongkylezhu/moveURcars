@@ -8,21 +8,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.kylezhudev.moveurcars.AlarmSetupActivity">
+    tools:context="com.kylezhudev.moveurcars.AlarmSetupActivity"
+    >
 
     <CalendarView
         android:id="@+id/cv_calendar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        />
 
 
     <Button
         android:id="@+id/btn_notification"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="36dp"
+        android:shadowColor="@color/black"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:elevation="2dp"
         android:text="Notify" />
 
 </RelativeLayout>
