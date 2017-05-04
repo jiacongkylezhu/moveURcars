@@ -1,6 +1,8 @@
 package com.kylezhudev.moveurcars;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
@@ -9,9 +11,11 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.transition.Explode;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 
 import com.kylezhudev.moveurcars.recyclerView.AlarmFragment;
 
@@ -29,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         setContentView(R.layout.activity_main);
 
         vpList = (ViewPager) findViewById(R.id.vp_list);
@@ -43,10 +48,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(MainActivity.this, StreetSetup.class));
+                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+                    getWindow().setExitTransition(new Explode());
+                    startActivity(new Intent(MainActivity.this, StreetSetup.class),
+                            ActivityOptions.makeSceneTransitionAnimation(MainActivity.this).toBundle());
+                }else{
+                    startActivity(new Intent(MainActivity.this, StreetSetup.class));
+                }
             }
         });
-
     }
 
     @Override

@@ -5,33 +5,40 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="248518040552866"
+    timestamp="188271408470275"
     token="-4054917552502219334"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COMPATIBLE" >
 
     <task
         name="javac"
-        duration="5030" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1314" />
+        duration="0" />
     <task
         name="verifier"
-        duration="389" />
+        duration="0" />
 
     <artifact
-        location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
+        location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
 
     <build
-        timestamp="248518040552866"
-        verifier="FULL_BUILD_REQUESTED" >
+        timestamp="186968110061464"
+        verifier="MANIFEST_FILE_CHANGE" >
         <artifact
             location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
+    </build>
+    <build
+        timestamp="188271408470275"
+        verifier="COMPATIBLE" >
+        <artifact
+            location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
     </build>
 
 </instant-run>

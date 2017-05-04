@@ -2,9 +2,9 @@
     <string name="app_name">moveURcars</string>
     <string name="action_settings">Settings</string>
     <string name="no_data_found">Notification has not been set up yet</string>
-    <string name="street">Street :</string>
+    <string name="street">Street:</string>
     <string name="street_hint">2nd Street</string>
-    <string name="side_of_street">Side of Street :</string>
+    <string name="side_of_street">Side of Street:</string>
     <string-array name="side_of_street_spinner">
         <item>A</item>
         <item>B</item>

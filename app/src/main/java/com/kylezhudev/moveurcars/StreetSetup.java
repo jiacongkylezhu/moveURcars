@@ -31,9 +31,11 @@ public class StreetSetup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_street_setup);
         sideOfStreet = (Spinner) findViewById(R.id.sp_side_of_street);
-        arrayAdapter = ArrayAdapter.createFromResource(this, R.array.side_of_street_spinner, android.R.layout.simple_spinner_item);
+//        arrayAdapter = ArrayAdapter.createFromResource(this, R.array.side_of_street_spinner, android.R.layout.simple_spinner_item);
+        arrayAdapter = ArrayAdapter.createFromResource(this, R.array.side_of_street_spinner, R.layout.spinner_items);
         dbHelper = DatabaseHelper.getInstance(this);
-        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        arrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        arrayAdapter.setDropDownViewResource(R.layout.spinner_items);
         sideOfStreet.setAdapter(arrayAdapter);
         sideOfStreet.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override

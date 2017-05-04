@@ -814,6 +814,7 @@
     <dimen name="notification_subtext_size">13sp</dimen>
     <dimen name="notification_top_pad">10dp</dimen>
     <dimen name="notification_top_pad_large_text">5dp</dimen>
+    <dimen name="spinner_horizontal_margin">48dp</dimen>
     <dimen name="text_margin">16dp</dimen>
     <dimen name="text_size_L">32sp</dimen>
     <dimen name="text_size_M">24sp</dimen>
@@ -898,9 +899,9 @@
     <string name="search_menu_title">Search</string>
     <string name="select_date_and_time">Selected date and time</string>
     <string name="setup_date_and_time">set up date and time</string>
-    <string name="side_of_street">Side of Street :</string>
+    <string name="side_of_street">Side of Street:</string>
     <string name="status_bar_notification_info_overflow">999+</string>
-    <string name="street">Street :</string>
+    <string name="street">Street:</string>
     <string name="street_cleaning_time">Street cleaning time: </string>
     <string name="street_hint">2nd Street</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>

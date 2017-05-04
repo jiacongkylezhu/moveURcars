@@ -1,9 +1,5 @@
 [
     {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\src\\main\\res\\menu\\menu_main.xml"
-    },
-    {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
         "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\src\\main\\res\\menu\\menu_main.xml"
     }
