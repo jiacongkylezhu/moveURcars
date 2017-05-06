@@ -3,6 +3,7 @@ package com.kylezhudev.moveurcars;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
+
 import com.kylezhudev.moveurcars.model.DatabaseHelper;
 
 public class StreetSetup extends AppCompatActivity {
@@ -23,7 +25,6 @@ public class StreetSetup extends AppCompatActivity {
     private DatabaseHelper dbHelper;
     private static int id;
     private static final String ID_KEY = "ID";
-
 
 
     @Override
@@ -55,16 +56,24 @@ public class StreetSetup extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 street = editText.getText().toString();
+
                 if (selectedItem == null) {
                     Toast.makeText(getBaseContext(), "Please select which side you park the car on", Toast.LENGTH_SHORT).show();
                 }
-                saveStreet(selectedItem, street);
-                Toast.makeText(getBaseContext(), "Saved", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(StreetSetup.this, AlarmSetupActivity.class);
-                intent.putExtra(ID_KEY,id);
-                startActivity(intent);
+                if (TextUtils.isEmpty(street)) {
+                    Log.i("savedStreet", "Street: " + street);
+                    Toast.makeText(getBaseContext(), "Please enter street name", Toast.LENGTH_SHORT).show();
+                }else{
+                    saveStreet(selectedItem, street);
+                    Toast.makeText(getBaseContext(), "Saved", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(StreetSetup.this, AlarmSetupActivity.class);
+                    intent.putExtra(ID_KEY, id);
+                    startActivity(intent);
 //                MainActivity.getAlarmFragment().updateStreet();
-                finish();
+                    finish();
+                }
+
+
             }
         });
 
@@ -73,15 +82,15 @@ public class StreetSetup extends AppCompatActivity {
     private void saveStreet(String side, String street) {
         dbHelper = DatabaseHelper.getInstance(this);
         id = dbHelper.getItemIndex();
-        if(id == -1){
+        if (id == -1) {
             id = 1;
-        }else {
+        } else {
             id++;
         }
 
         Log.i("check inAlarmId", "intAlarmId = " + id);
 
-        boolean isInserted = dbHelper.insertData(street,side,id);
+        boolean isInserted = dbHelper.insertData(street, side, id);
         if (isInserted) {
             Toast.makeText(this, "Data Inserted", Toast.LENGTH_SHORT);
         } else {

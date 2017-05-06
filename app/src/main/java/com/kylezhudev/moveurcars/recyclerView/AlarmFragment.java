@@ -177,6 +177,9 @@ public class AlarmFragment extends Fragment {
 
         return updatedList;
     }
+    public void refreshUI(){
+        alarmRVAdapter.notify();
+    }
 
     public void checkIfEmpty() {
         if (alarmRVAdapter.getItemCount() == 0) {
@@ -227,11 +230,13 @@ public class AlarmFragment extends Fragment {
         mDeleteFlag = true;
 
         final SelectedDates removedDate = mSelectedDates.get(position);
+        final Street removedStreet = mSelectedStreets.get(position);
         AlarmRVAdapter.AlarmViewHolder vh = (AlarmRVAdapter.AlarmViewHolder) rvAlarmList.findViewHolderForAdapterPosition(position);
         Toast.makeText(getContext(), "position: " + position, Toast.LENGTH_SHORT).show();
 //        String dataString = vh.getAlarmDateString();
         String strTag = vh.getTagString();
         mSelectedDates.remove(position);
+        mSelectedStreets.remove(position);
         alarmRVAdapter.notifyItemRemoved(position);
         Toast.makeText(getContext(), "Deleted Alarm ID: " + strTag, Toast.LENGTH_SHORT).show();
 
@@ -240,6 +245,7 @@ public class AlarmFragment extends Fragment {
                     @Override
                     public void onClick(View v) {
                         mSelectedDates.add(position, removedDate);
+                        mSelectedStreets.add(position,removedStreet);
                         alarmRVAdapter.notifyItemChanged(position);
                         mDeleteFlag = false;
                     }

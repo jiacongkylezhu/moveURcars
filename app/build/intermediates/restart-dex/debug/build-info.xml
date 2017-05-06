@@ -5,40 +5,47 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="188271408470275"
+    timestamp="288435859086215"
     token="-4054917552502219334"
-    verifier="COMPATIBLE" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="1394" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="46" />
     <task
         name="verifier"
-        duration="0" />
+        duration="6" />
 
     <artifact
-        location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-        type="RESOURCES" />
+        location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+        type="DEX" />
 
     <build
-        timestamp="186968110061464"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="286217160779770"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="188271408470275"
-        verifier="COMPATIBLE" >
+        timestamp="288323871815101"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
+            location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+    </build>
+    <build
+        timestamp="288435859086215"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+            type="DEX" />
     </build>
 
 </instant-run>

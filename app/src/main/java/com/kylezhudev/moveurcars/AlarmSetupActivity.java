@@ -85,7 +85,7 @@ public class AlarmSetupActivity extends AppCompatActivity {
         btnNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (selectedDates == null) {
+                if (selectedDates == null || selectedCalendar ==null) {
                     Toast.makeText(AlarmSetupActivity.this, "Please select a date", Toast.LENGTH_SHORT).show();
                 } else {
 
