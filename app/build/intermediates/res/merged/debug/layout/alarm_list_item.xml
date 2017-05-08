@@ -8,34 +8,13 @@
     android:background="@color/colorRecyclerViewBackground"
     android:orientation="horizontal">
 
-
-    <!--<RelativeLayout-->
-    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--android:id="@+id/rl_delete"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="105dp"-->
-    <!--android:visibility="visible">-->
-
-
-    <!--<ImageView-->
-    <!--android:id="@+id/btb_delete"-->
-    <!--android:layout_width="48dp"-->
-    <!--android:layout_height="48dp"-->
-    <!--android:background="@drawable/ic_delete_sweep_black_48dp"-->
-    <!--android:layout_alignParentEnd="true"-->
-    <!--android:layout_centerVertical="true"-->
-    <!--android:visibility="invisible"/>-->
-
-
-    <!--</RelativeLayout>-->
-
-
     <ImageView
         android:id="@+id/img_side_icon"
-        android:layout_width="64dp"
-        android:layout_height="64dp"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerVertical="true"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/ic_side_a" />
 
     <TextView
@@ -43,11 +22,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="4dp"
         android:layout_toEndOf="@id/img_side_icon"
-        android:gravity="top"
         android:text="Next Cleaning Date:"
-        android:textSize="12sp" />
+        android:textSize="20sp"
+        android:textStyle="italic"
+        />
 
     <TextView
         android:id="@+id/tv_tag"
@@ -56,62 +36,105 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_toEndOf="@id/lb_next_cleaning_date"
-        android:gravity="top" />
+        android:gravity="top"
+        android:visibility="invisible" />
 
-
-    <TextView
-        android:id="@+id/tv_alarm_date"
+    <RelativeLayout
+        android:id="@+id/rl_time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/lb_next_cleaning_date"
-
-        android:layout_marginStart="16dp"
         android:layout_toEndOf="@id/img_side_icon"
-        android:gravity="center_vertical"
-        android:text="01/01/2017  3:00 AM"
-        android:textSize="16sp" />
+        android:layout_marginTop="8dp">
 
-    <TextView
-        android:id="@+id/tv_day_of_week"
+        <ImageView
+            android:id="@+id/img_time"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/ic_access_time_black_24dp"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/tv_alarm_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/img_time"
+            android:gravity="center_vertical"
+            android:text="01/01/2017  3:00 AM"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_alarm_date"
-        android:layout_marginStart="16dp"
+        android:layout_below="@id/rl_time"
         android:layout_toEndOf="@id/img_side_icon"
-        android:text="1st Thursday of every month"
-        android:textSize="16sp" />
+        android:layout_marginTop="@dimen/list_item_margin_top"
+        android:layout_marginStart="16dp">
 
+        <ImageView
+            android:id="@+id/img_date"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ic_date_range_black_24dp"
+            android:layout_centerVertical="true"/>
 
-    <TextView
-        android:id="@+id/tv_street_name"
+        <TextView
+            android:id="@+id/tv_day_of_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/img_date"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/img_date"
+            android:text="1st Thursday of every month"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_location"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tv_day_of_week"
-        android:layout_marginStart="16dp"
+        android:layout_below="@id/rl_date"
         android:layout_toEndOf="@id/img_side_icon"
-        android:gravity="bottom"
-        android:text="Street: 25th Ave"
-        android:textSize="16sp" />
+        android:layout_marginTop="@dimen/list_item_margin_top"
+        android:layout_marginStart="16dp">
+
+        <ImageView
+            android:id="@+id/img_location"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/ic_location_on_black_24dp"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/tv_street_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/img_location"
+            android:layout_marginStart="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/img_location"
+            android:gravity="bottom"
+            android:text="Street: 25th Ave"
+            android:textSize="16sp" />
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/separator"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:layout_below="@id/tv_street_name"
+        android:layout_below="@id/rl_location"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
         android:background="#808080" />
-
-    <ImageView
-        android:id="@+id/btn_delete"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@id/tv_day_of_week"
-        android:background="@drawable/ic_delete_sweep_black_48dp"
-
-        android:visibility="invisible" />
 
 
 </RelativeLayout>

@@ -9,5 +9,6 @@
     <dimen name="text_size_L">32sp</dimen>
     <dimen name="text_size_M">24sp</dimen>
     <dimen name="spinner_horizontal_margin">48dp</dimen>
+    <dimen name="list_item_margin_top">8dp</dimen>
 
 </resources>

@@ -42,7 +42,7 @@ public class AlarmRVAdapter extends RecyclerView.Adapter<AlarmRVAdapter.AlarmVie
         private TextView mTvDayOfWeek;
         private TextView mTvStreet;
         private TextView mTvTag;
-        private ImageView mImageView;
+        private ImageView mImageView, mImgTime, mImgDate, mImgLocation;
 
         public AlarmViewHolder(View itemView) {
             super(itemView);
@@ -51,6 +51,9 @@ public class AlarmRVAdapter extends RecyclerView.Adapter<AlarmRVAdapter.AlarmVie
             mTvStreet = (TextView) itemView.findViewById(R.id.tv_street_name);
             mTvTag = (TextView) itemView.findViewById(R.id.tv_tag);
             mImageView = (ImageView) itemView.findViewById(R.id.img_side_icon);
+//            mImgTime = (ImageView) itemView.findViewById(R.id.img_time);
+//            mImgDate = (ImageView) itemView.findViewById(R.id.img_date);
+//            mImgLocation = (ImageView) itemView.findViewById(R.id.img_location);
         }
 
         public String getAlarmDateString() {

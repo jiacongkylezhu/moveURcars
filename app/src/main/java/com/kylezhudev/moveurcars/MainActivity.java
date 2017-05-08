@@ -25,7 +25,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
 
     public ViewPager vpList;
-    private static final int REQ_ALARM_INFO = 101;
     private static AlarmFragment alarmFragment;
 
 
@@ -59,13 +58,13 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        //TODO 5.5.2017 work on the resume method to refreshUI
-        getAlarmFragment().refreshUI();
-    }
+//    @Override
+//    protected void onResume() {
+//        super.onResume();
+//
+//        //TODO 5.5.2017 work on the resume method to refreshUI
+//        getAlarmFragment().refreshUI();
+//    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

@@ -21,6 +21,7 @@ public class NotificationService extends Service{
     private final String ALARM_ID = "AlarmId";
 
 
+
     public class ServiceBinder extends Binder{
         NotificationService getService(){
             return NotificationService.this;
@@ -58,9 +59,7 @@ public class NotificationService extends Service{
 
 
 
-        Intent intent = new Intent(this, NotificationDetails.class);
-
-
+        Intent intent = new Intent(this, MainActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0, intent,PendingIntent.FLAG_UPDATE_CURRENT);
 //        PendingIntent contentIntent = PendingIntent.getActivity(this, alarmId, intent,PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(contentIntent);

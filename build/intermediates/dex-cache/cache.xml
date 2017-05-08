@@ -2,166 +2,148 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_076eeee6595b691b582dc599ae44e2ab33963556\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.1.0_c0f37228de6c1c32f11004ee9368d04b40d0769a\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_c9a01d6aaffae8cd48acb965e6709bb6ce4034fe\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_3e32ff44e8c389e2d1848fee2b7c288a659bfa32\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.2.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.databinding-adapters-1.2.1_de9b93af8d4cd6c1b692a91319fe388ea04170b2\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="96af591a8ea5f57606f66ebb90de11b186f7004d">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_ee1690ccbf921efa3ede3fd016ec388d87217b38\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f054e2ff26836982f3b3ae5c5cbb300b158ab74e">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9231ed4025f3d64aa707dc154979bed048f29893\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_f177774553ba7e81909f4c5690d7e355340402ae\classes.dex" />
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.1.0_18553d13536e50b9b888f5678c155ab3a7294d3d.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_9279d4f7f952b097ee75d00475f4452d46cacce6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Program Files\Android\Android Studio\gradle\m2repository\com\android\databinding\baseLibrary\2.2.3\baseLibrary-2.2.3.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\Kyle\.gradle\caches\modules-2\files-2.1\com.android.databinding\baseLibrary\2.2.3\b4b51d1925cdfda98fd861230c1ecb5855500129\baseLibrary-2.2.3.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="b4b51d1925cdfda98fd861230c1ecb5855500129">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\baseLibrary-2.2.3_8bc637fcca1e0a3556ffc9576dbd2dded58abbcb\classes.dex" />
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\baseLibrary-2.2.3_5c06582c7314494e27f41b4fb430dca466684de4.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.1.0_5c5101f7a0cac24e39b4753d6aa8596a4af51008\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_444c9a3e837de6cab3fa825e31a66e26d1be2660\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_b59859be8b3cced5b302d3234592cdc19fd91700\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2.1\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.databinding\library\1.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="957dc30b1495f8689271e00d56ab09cc9192df02">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.databinding-library-1.2.1_7e24f76f3b493dfbd673d605c8da93fd9b4fe7f9\classes.dex" />
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.databinding-library-1.2.1_bfd876ff375e0d38bfdb374e1e7e30b672371de7.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_8335e07732140d3b63c561d55d94e18cbcbf41a8\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_db44fb341bfeed4fd4478386c46819a79ac2c939\classes.dex" />
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.1.0_61fff8ec5ad26460ad973831723b068d5342301d.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_2cd94972dee5212c69b4171a5a8b035fd5a86e06\classes.dex" />
+        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.1.0_0d8609f0bef794b2a8c2e96517c2b999df55b9ad.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="25.0.2"
         sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_df7afe8bdddbb038cf61907477e88cc65ac4f324\classes.dex" />
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.1.0_f958ebaeb054d9077ef7be3d848045a293741f04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\design\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="30103d98fa5ed824b54af839c85e2111f9bde8ec">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-design-25.1.0_258855e1bf569aca849aa2a5b767cb5c06cb11c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\transition\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d38084015027549951cbaea5d5f6fb795cc81151">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-transition-25.1.0_8ae320985e483b5eb37356eb0714bf4636ce3dea.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.1.0_83cb2d024910d2b5c372f68e4f66ffb7d5449e8a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.1.0_9fd22e8acc83b53385406511cad8779f2e376edd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.databinding\adapters\1.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="c56d29136c2257f63f08c29c4e739efb03b06c7d">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.databinding-adapters-1.2.1_8265b4e3a2fd74b0d335b4cc2c0fe3baf77e6388.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Kyle\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\support-annotations-25.1.0_ab27b4eb555b92bf4284c751a40cbd1a17fdf42b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.1.0_b1daf85527d01a71e58e0ac568a5238022ef4b53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.1.0_36fdc94a269cdd62f7c4ad0f92d0c0ff000c35af.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-25.1.0_f5630f2695b0d6c1abfb315cb0bc7e65773f5eb2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="D:\Google Drive\Dev3\moveURcars\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.1.0_3f1113d796577b4563c13dcaf8dedb04a24aaefd.jar" />
     </item>
 
 </items>

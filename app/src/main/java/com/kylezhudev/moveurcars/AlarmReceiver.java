@@ -65,7 +65,7 @@ public class AlarmReceiver extends BroadcastReceiver {
                 .setPriority(NotificationCompat.PRIORITY_MAX);
 
 
-        Intent intent = new Intent(context, NotificationDetails.class);
+        Intent intent = new Intent(context, MainActivity.class);
         PendingIntent contentIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 //        PendingIntent contentIntent = PendingIntent.getActivity(context, alarmId, intent,PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(contentIntent);

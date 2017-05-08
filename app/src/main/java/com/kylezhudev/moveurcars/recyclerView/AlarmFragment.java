@@ -136,7 +136,7 @@ public class AlarmFragment extends Fragment {
 
 
     private List<SelectedDates> setupSelectedDates() {
-        mDbHelper = DatabaseHelper.getInstance(getContext());;
+        mDbHelper = DatabaseHelper.getInstance(getContext());
 
         int itemCounter = mDbHelper.getItemIndex();
         if (itemCounter != -1) {
@@ -177,6 +177,16 @@ public class AlarmFragment extends Fragment {
 
         return updatedList;
     }
+
+    @Override
+    public void onResume() {
+        mSelectedDates.clear();
+
+        alarmRVAdapter = new AlarmRVAdapter(getContext(), setupSelectedDates(),mSelectedStreets);
+        rvAlarmList.setAdapter(alarmRVAdapter);
+        super.onResume();
+    }
+
     public void refreshUI(){
         alarmRVAdapter.notify();
     }
