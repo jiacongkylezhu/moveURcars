@@ -1,11 +1,16 @@
 package com.kylezhudev.moveurcars;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -31,6 +36,7 @@ public class StreetSetup extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_street_setup);
+        transparentStatusBar();
         sideOfStreet = (Spinner) findViewById(R.id.sp_side_of_street);
 //        arrayAdapter = ArrayAdapter.createFromResource(this, R.array.side_of_street_spinner, android.R.layout.simple_spinner_item);
         arrayAdapter = ArrayAdapter.createFromResource(this, R.array.side_of_street_spinner, R.layout.spinner_items);
@@ -77,6 +83,30 @@ public class StreetSetup extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void transparentStatusBar(){
+        if (Build.VERSION.SDK_INT >= 19 && Build.VERSION.SDK_INT <21){
+            setWindowFlag(this,WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,true);
+        }
+        if(Build.VERSION.SDK_INT >= 19){
+            getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
+        }
+        if(Build.VERSION.SDK_INT >= 21){
+            setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS,false);
+            getWindow().setStatusBarColor(Color.TRANSPARENT);
+        }
+    }
+
+    public static void setWindowFlag(Activity activity, final int bits, boolean on){
+        Window win = activity.getWindow();
+        WindowManager.LayoutParams winParams = win.getAttributes();
+        if(on){
+            winParams.flags |= bits;
+        }else{
+            winParams.flags &= ~bits;
+        }
+        win.setAttributes(winParams);
     }
 
     private void saveStreet(String side, String street) {

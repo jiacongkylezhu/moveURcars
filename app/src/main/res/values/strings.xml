@@ -24,4 +24,6 @@
     <string name="delete">Delete</string>
     <string name="cancel">Cancel</string>
     <string name="deleted">Item Deleted</string>
+    <string name="notify_button">SUBMIT</string>
+
 </resources>

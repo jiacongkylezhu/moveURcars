@@ -1,35 +1,23 @@
 [
     {
+        "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_location_on_black_24dp.xml",
+        "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_location_on_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_date_range_black_24dp.xml",
+        "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_date_range_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_add_white_24px.xml",
         "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_add_white_24px.xml"
     },
     {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
-    },
-    {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_access_time_black_24dp.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_access_time_black_24dp.xml"
-    },
-    {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
-    },
-    {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_date_range_black_24dp.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_date_range_black_24dp.xml"
-    },
-    {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_add_white_24px.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_add_white_24px.xml"
+        "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_access_time_black_24dp.xml",
+        "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_access_time_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
         "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
-    },
-    {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_delete_sweep_black_48dp.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_delete_sweep_black_48dp.xml"
     },
     {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_delete_sweep_black_48dp.xml",
@@ -38,9 +26,5 @@
     {
         "merged": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
         "source": "C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.1.0\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
-    },
-    {
-        "merged": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_location_on_black_24dp.xml",
-        "source": "D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_location_on_black_24dp.xml"
     }
 ]

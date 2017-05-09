@@ -5,46 +5,51 @@
     density="420dpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="288435859086215"
+    timestamp="12778001289170"
     token="-4054917552502219334"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1394" />
+        duration="2881" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="46" />
+        duration="64" />
     <task
         name="verifier"
-        duration="6" />
+        duration="10" />
 
     <artifact
-        location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
+        location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+        type="DEX" />
+    <artifact
+        location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
         type="DEX" />
 
     <build
-        timestamp="286217160779770"
+        timestamp="11574813219329"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
     <build
-        timestamp="288323871815101"
+        timestamp="12778001289170"
         verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
+            type="DEX" />
         <artifact
             location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
-    </build>
-    <build
-        timestamp="288435859086215"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\Users\k.zhu\Downloads\moveURcars4.24.2\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
             type="DEX" />
     </build>
 

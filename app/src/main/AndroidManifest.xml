@@ -35,7 +35,7 @@
         <activity android:name=".NotificationDetails" />
         <activity android:name=".AlarmSetupActivity" />
         <activity android:name=".StreetSetup"
-            android:theme="@style/AppTheme.NoActionBar.StatusBar"/>
+            android:theme="@style/AppTheme.NoActionBar.Transparent"/>
         <activity android:name=".DeleteConfirmationActivity"
             android:theme="@style/AppTheme.Delete"/>
     </application>

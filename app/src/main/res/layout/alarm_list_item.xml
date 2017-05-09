@@ -111,7 +111,7 @@
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:background="@drawable/ic_location_on_black_24dp"
-            android:layout_centerVertical="true"/>
+            />
 
         <TextView
             android:id="@+id/tv_street_name"
@@ -119,7 +119,6 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/img_location"
             android:layout_marginStart="8dp"
-            android:layout_centerVertical="true"
             android:layout_toEndOf="@id/img_location"
             android:gravity="bottom"
             android:text="Street: 25th Ave"

@@ -42,7 +42,7 @@
         <activity android:name="com.kylezhudev.moveurcars.AlarmSetupActivity" />
         <activity
             android:name="com.kylezhudev.moveurcars.StreetSetup"
-            android:theme="@style/AppTheme.NoActionBar.StatusBar" />
+            android:theme="@style/AppTheme.NoActionBar.Transparent" />
         <activity
             android:name="com.kylezhudev.moveurcars.DeleteConfirmationActivity"
             android:theme="@style/AppTheme.Delete" />
