@@ -2,5 +2,5 @@ package android.databinding.layouts;
 
 import android.databinding.BindingBuildInfo;
 
-@BindingBuildInfo(buildId="79fb4b00-37e5-484c-9cde-eec3ec6bb19f", modulePackage="com.kylezhudev.moveurcars", sdkRoot="C:\\Users\\k.zhu\\AppData\\Local\\Android\\Sdk",layoutInfoDir="C:\\Users\\k.zhu\\Downloads\\moveURcars4.24.2\\app\\build\\intermediates\\data-binding-info\\debug",exportClassListTo="",isLibrary=false,minSdk=19,enableDebugLogs=false,printEncodedError=true)
+@BindingBuildInfo(buildId="8e9a176e-4d30-4056-b5dc-cb722d10dfb9", modulePackage="com.kylezhudev.moveurcars", sdkRoot="C:\\Users\\Kyle\\AppData\\Local\\Android\\Sdk",layoutInfoDir="D:\\Google Drive\\Dev3\\moveURcars\\app\\build\\intermediates\\data-binding-info\\debug",exportClassListTo="",isLibrary=false,minSdk=19,enableDebugLogs=false,printEncodedError=true)
 public class DataBindingInfo {}

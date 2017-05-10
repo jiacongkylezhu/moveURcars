@@ -74,8 +74,8 @@ public class AlarmSetupActivity extends AppCompatActivity {
                 String testString = new SimpleDateFormat("MM/dd/yyyy").format(testDate);
 
 
-                Toast.makeText(AlarmSetupActivity.this, "DOWIM: " + dayOfWeekInMonth
-                        + " DoW: " + dayOfWeek, Toast.LENGTH_SHORT).show();
+//                Toast.makeText(AlarmSetupActivity.this, "DOWIM: " + dayOfWeekInMonth
+//                        + " DoW: " + dayOfWeek, Toast.LENGTH_SHORT).show();
 
                 showDialog(DIALOG_ID);
             }
@@ -108,8 +108,9 @@ public class AlarmSetupActivity extends AppCompatActivity {
 //                    scheduleClient.setAlarmForNotification(selectedCalendar, itemIndex, deleteFlag);
                     scheduleClient.setAlarmForNotification(selectedCalendar, intAlarmId);
                     strDate = new SimpleDateFormat("MM/dd/yyyy").format(selectedCalendar.getTime());
-                    Toast.makeText(AlarmSetupActivity.this, "Street cleaning notification is set for: " + hour + ":" + minute
-                            + " on " + strDate, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(AlarmSetupActivity.this, "Street cleaning notification is set for: " + hour + ":" + minute
+//                            + " on " + strDate, Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AlarmSetupActivity.this, "SAVED", Toast.LENGTH_SHORT).show();
 
                     //TODO if Alarm service not working properly check the unbind service below
 
@@ -161,8 +162,8 @@ public class AlarmSetupActivity extends AppCompatActivity {
                 public void onTimeSet(TimePicker timePicker, int newHour, int newMinute) {
                     hour = newHour;
                     minute = newMinute;
-                    Toast.makeText(AlarmSetupActivity.this, "Street cleaning at " + hour + ":" + minute
-                            + " on " + strDate, Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(AlarmSetupActivity.this, "Street cleaning notifies at" + hour + ":" + minute
+//                            + " on " + strDate, Toast.LENGTH_SHORT).show();
                 }
 
             };

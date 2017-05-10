@@ -71,7 +71,7 @@ public class StreetSetup extends AppCompatActivity {
                     Toast.makeText(getBaseContext(), "Please enter street name", Toast.LENGTH_SHORT).show();
                 }else{
                     saveStreet(selectedItem, street);
-                    Toast.makeText(getBaseContext(), "Saved", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getBaseContext(), "Select the notification date and time", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(StreetSetup.this, AlarmSetupActivity.class);
                     intent.putExtra(ID_KEY, id);
                     startActivity(intent);

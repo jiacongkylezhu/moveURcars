@@ -31,7 +31,7 @@
     <style name="AppTheme.Delete">
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowCloseOnTouchOutside">true</item>
-    </style>
+    </style>(
     <style name="MainButton" parent="android:Theme.Material">
         <item name="colorControlHighlight">@color/colorPrimaryLight</item>
         <item name="colorButtonNormal">@color/colorPrimaryDark</item>

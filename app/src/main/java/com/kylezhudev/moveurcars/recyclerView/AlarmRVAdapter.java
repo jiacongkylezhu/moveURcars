@@ -134,6 +134,9 @@ public class AlarmRVAdapter extends RecyclerView.Adapter<AlarmRVAdapter.AlarmVie
             case 4:
                 strDayOfWeekInMon = "4th";
                 break;
+            case 5:
+                strDayOfWeekInMon = "5th";
+                break;
         }
 
         switch (dayOfWeek) {
